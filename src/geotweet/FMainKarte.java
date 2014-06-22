@@ -112,7 +112,7 @@ public class FMainKarte extends javax.swing.JFrame {
         try{
             if(jdbc_conn != null) this.disconnect();
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            String url = "blackpinguin.de";
+            String url = "server.blackpinguin.de";
             String user = "bai2dbp_geotweet";
             String pw = "trueblood";
             jdbc_conn = DriverManager.getConnection("jdbc:mysql://"+url+"/?user="+user+"&password="+pw);
